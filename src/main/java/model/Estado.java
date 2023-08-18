@@ -25,8 +25,3 @@ public class Estado extends PanacheEntity {
     }
 
 }
-
-// @Entity
-// public class MyEntity extends PanacheEntity {
-//     public String field;
-// }
