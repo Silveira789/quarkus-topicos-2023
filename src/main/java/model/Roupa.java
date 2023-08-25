@@ -11,9 +11,10 @@ public class Roupa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id;
+    private String nome;
     private String corPricipal;
     private String tamanho;
-    private String nome;
+    
 
     public long getId() {
         return Id;
