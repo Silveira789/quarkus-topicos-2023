@@ -1,6 +1,5 @@
 package model;
 
-// import io.quarkus.hibernate.orm.panache.PanacheEntity; apagado
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,7 +10,7 @@ public class Estado {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private long id;
     private String nome;
     private String sigla;
 
@@ -31,11 +30,11 @@ public class Estado {
         this.sigla = sigla;
     }
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 

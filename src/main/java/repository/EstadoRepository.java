@@ -10,7 +10,7 @@ import model.Estado;
 public class EstadoRepository implements PanacheRepository<Estado> {
 
     public List<Estado> findByNome(String nome) {
-        return find("UPPER(nome) LIKE UPPER(?1) ", "%"+nome +"%").list();
+        return find("UPPER(nome) LIKE UPPER(?1) ", "%" + nome + "%").list();
     }
 
 }
