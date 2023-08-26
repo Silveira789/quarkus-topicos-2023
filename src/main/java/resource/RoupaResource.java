@@ -27,8 +27,9 @@ public class RoupaResource {
     public Roupa insert(Roupa roupa) {
         Roupa novaRoupa = new Roupa();
         novaRoupa.setNome(roupa.getNome());
+        novaRoupa.setCorPrincipal(roupa.getCorPrincipal());
         novaRoupa.setTamanho(roupa.getTamanho());
-        novaRoupa.setCorPricipal(roupa.getCorPricipal());
+        
 
         repository.persist(novaRoupa);
 

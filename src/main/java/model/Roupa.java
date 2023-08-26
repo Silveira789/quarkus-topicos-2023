@@ -12,7 +12,7 @@ public class Roupa {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long Id;
     private String nome;
-    private String corPricipal;
+    private String corPrincipal;
     private String tamanho;
     
 
@@ -24,12 +24,12 @@ public class Roupa {
         Id = id;
     }
 
-    public String getCorPricipal() {
-        return corPricipal;
+    public String getCorPrincipal() {
+        return corPrincipal;
     }
 
-    public void setCorPricipal(String corPricipal) {
-        this.corPricipal = corPricipal;
+    public void setCorPrincipal(String corPricipal) {
+        this.corPrincipal = corPricipal;
     }
 
     public String getTamanho() {
